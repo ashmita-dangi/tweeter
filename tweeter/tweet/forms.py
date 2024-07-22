@@ -8,7 +8,7 @@ class TweetForm (forms.ModelForm):
         fields = ['text','photo']
 
 class UserRegistrationForm(UserCreationForm):
-    email = forms.EmailField()
+    email = forms.EmailField(required=True)
     class Meta:
         model = User 
-        fields = ('Username', 'email', 'password1', 'password2')
+        fields = ('username', 'email', 'password1', 'password2')

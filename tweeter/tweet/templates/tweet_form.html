@@ -4,7 +4,7 @@ XYZ
 {% endblock %}
 
 {% block content %}
-<h1 class='text-center '> welcome <h1>
+<h1 class='text-center'> welcome <h1>
 
 <h2>
     {% id form.instance.pk%} 
@@ -17,6 +17,6 @@ XYZ
         {{form.as_p}}
         <button class="btn btn-warning" type = "submit">Submit</button>
     </form>
-    <a href="{% url 'tweet_list' % }"> Back to tweet list</a>
+    <a href="{% url 'tweet_list' % }"> Back to tweet list </a>
     </h2>
 {% endblock %}
